@@ -46,7 +46,7 @@ deploy:
   repo: damianszczepanik/damianszczepanik.github.io
   target_branch: master
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN
+  github-token: ${GITHUB_TOKEN}
   keep-history: true
   local-dir: target/demo/
   verbose: true
@@ -56,6 +56,6 @@ deploy:
 addons:
   sonarcloud:
     organization: "damianszczepanik"
-    token: $SONAR_TOKEN
+    token: ${SONAR_TOKEN}
   branches:
-    - master
+    - sonar
